@@ -1,0 +1,26 @@
+my-messaging-app/
+├── frontend/                  # React frontend
+│   ├── Dockerfile             # Dockerfile for frontend
+│   ├── package.json           # Frontend dependencies
+│   └── (other frontend files) # e.g., src/, public/
+│
+├── backend/                   # Node.js backend
+│   ├── Dockerfile             # Dockerfile for backend
+│   ├── package.json           # Backend dependencies
+│   ├── server.js              # Main entry point for your Express.js API
+│   ├── routes/                # Folder for API route definitions
+│   │   ├── messages.js        # Example route for messaging
+│   │   └── (other routes)     # Additional routes
+│   ├── controllers/           # Folder for API logic
+│   │   ├── messageController.js # Logic for message handling
+│   │   └── (other controllers) # Additional logic
+│   ├── models/                # Folder for database models (if using ORM)
+│   │   ├── messageModel.js     # Example message model
+│   │   └── (other models)      # Additional models
+│   └── config/                # Configuration files (e.g., database config)
+│       └── db.js              # Database connection logic
+│
+├── database/                  # MySQL database setup (optional)
+│   └── (database setup files) # E.g., SQL scripts
+│
+└── docker-compose.yml         # Docker Compose configuration
